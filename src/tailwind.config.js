@@ -8,7 +8,6 @@ module.exports = {
       extend: {
         colors: {
           black: "#121212",
-          gold: "#f5b301",
         },
       },
     },
