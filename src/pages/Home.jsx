@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Services from './Services';
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
       <header className="flex justify-between items-center p-6 bg-[#1a1a1a] shadow-md">
         <h1 className="text-2xl font-bold text-gold">Royal Touch Detailing</h1>
         <nav className="space-x-6 text-sm">
-          <Link to="/services" className="hover:text-gold">Services</Link>
+          <Link to="Services" className="hover:text-gold">Services</Link>
           <Link to="/book" className="hover:text-gold">Book Now</Link>
           <Link to="/portfolio" className="hover:text-gold">Portfolio</Link>
           <Link to="/contact" className="hover:text-gold">Contact</Link>
