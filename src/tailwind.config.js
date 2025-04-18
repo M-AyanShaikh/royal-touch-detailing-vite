@@ -14,4 +14,15 @@ module.exports = {
     },
     plugins: [],
   }
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        gold: '#FFD700', // Hex code for gold
+      },
+    },
+  },
+};
+
   
