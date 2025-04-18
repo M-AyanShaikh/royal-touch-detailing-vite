@@ -10,6 +10,7 @@ import Portfolio from '../components/Portfolio';
 import ServiceButton from '../components/ServiceButton';
 import CallToAction from '../components/CallToAction';
 import BlogSection from '../components/BlogSection';
+import Footer from '../components/Footer';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -18,7 +19,7 @@ const fadeIn = {
 
 const Home = () => {
   return (
-    <div className="bg-white text-black font-sans">
+    <div className="bg-black text-gray-100 font-sans">
       <Navbar />
 
       <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }}>
@@ -56,6 +57,8 @@ const Home = () => {
       <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }}>
         <BlogSection />
       </motion.div>
+
+      <Footer />
     </div>
   );
 };
