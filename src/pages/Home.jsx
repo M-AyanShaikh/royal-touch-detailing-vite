@@ -10,52 +10,97 @@ import Portfolio from '../components/Portfolio';
 import ServiceButton from '../components/ServiceButton';
 import CallToAction from '../components/CallToAction';
 import BlogSection from '../components/BlogSection';
+import Footer from '../components/Footer';
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
 const Home = () => {
   return (
-    <div className="bg-white text-black font-sans">
+    <div className="bg-white text-gray-100 font-sans">
       <Navbar />
 
-      <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+      {/* Hero Section */}
+      <motion.div
+        variants={fadeIn}
+        initial="hidden"
+        animate="visible" // Trigger animation immediately
+      >
         <Hero />
       </motion.div>
 
-      <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+      {/* Vehicle Selector */}
+      <motion.div
+        variants={fadeIn}
+        initial="hidden"
+        animate="visible" // Trigger animation immediately
+      >
         <VehicleSelector />
       </motion.div>
 
-      <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+      {/* Package Comparison */}
+      <motion.div
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible" // Trigger animation when in view
+        viewport={{ once: true }}
+      >
         <PackageComparison />
       </motion.div>
 
-      <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+      {/* Why Us Section */}
+      <motion.div
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible" // Trigger animation when in view
+        viewport={{ once: true }}
+      >
         <WhyUs />
       </motion.div>
 
-      <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+      {/* Review Carousel */}
+      <motion.div
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible" // Trigger animation when in view
+        viewport={{ once: true }}
+      >
         <ReviewCarousel />
       </motion.div>
 
-      <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+      {/* Portfolio */}
+      <motion.div
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible" // Trigger animation when in view
+        viewport={{ once: true }}
+      >
         <Portfolio />
       </motion.div>
 
-      <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-        <ServiceButton />
-      </motion.div>
-
-      <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+      {/* Call to Action */}
+      <motion.div
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible" // Trigger animation when in view
+        viewport={{ once: true }}
+      >
         <CallToAction />
       </motion.div>
 
-      <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+      {/* Blog Section */}
+      <motion.div
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible" // Trigger animation when in view
+        viewport={{ once: true }}
+      >
         <BlogSection />
       </motion.div>
+
+      <Footer />
     </div>
   );
 };
