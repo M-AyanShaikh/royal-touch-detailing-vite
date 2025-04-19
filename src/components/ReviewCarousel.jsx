@@ -2,10 +2,7 @@
 import React from 'react';
 
 const reviews = [
-  './public/review1.png',
-  './public/review2.png',
-  './public/review3.png',
-  './public/review4.png',
+  './assets/portfolio/review1.png',
 ];
 
 const ReviewCarousel = () => {
