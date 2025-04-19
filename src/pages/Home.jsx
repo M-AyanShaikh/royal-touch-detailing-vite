@@ -3,11 +3,9 @@ import { motion } from 'framer-motion';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import VehicleSelector from '../components/VehicleSelector';
-import PackageComparison from '../components/PackageComparison';
 import WhyUs from '../components/WhyUs';
 import ReviewCarousel from '../components/ReviewCarousel';
 import Portfolio from '../components/Portfolio';
-import ServiceButton from '../components/ServiceButton';
 import CallToAction from '../components/CallToAction';
 import BlogSection from '../components/BlogSection';
 import Footer from '../components/Footer';
@@ -38,16 +36,6 @@ const Home = () => {
         animate="visible" // Trigger animation immediately
       >
         <VehicleSelector />
-      </motion.div>
-
-      {/* Package Comparison */}
-      <motion.div
-        variants={fadeIn}
-        initial="hidden"
-        whileInView="visible" // Trigger animation when in view
-        viewport={{ once: true }}
-      >
-        <PackageComparison />
       </motion.div>
 
       {/* Why Us Section */}
