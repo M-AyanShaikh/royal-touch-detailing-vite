@@ -7,7 +7,7 @@ import Interior from './pages/packages/Interior';
 import Package from './pages/packages/Package';
 import Booking from './pages/Booking';
 import Portfolio from './pages/Portfolio';
-
+import Blog from './pages/Blog';
 
 const App = () => {
   return (
@@ -19,6 +19,7 @@ const App = () => {
       <Route path="/packages/package" element={<Package />} />
       <Route path="/booking" element={<Booking />} />
       <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/blog" element={<Blog />} />
     </Routes>
   );
 };
