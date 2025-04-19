@@ -69,7 +69,7 @@ const Services = () => {
             } items-center gap-8`}
           >
             {/* Image */}
-            <div className="group relative block w-full md:w-1/2 rounded-lg overflow-hidden shadow-lg hover:shadow-[0_0_20px_5px_#FFD700] transition-shadow">
+            <div className="group relative block w-full md:w-1/2 rounded-lg overflow-hidden shadow-lg hover:shadow-[0_0_20px_5px_#FFD700] transition-shadow z-10">
               <img
                 src={service.image}
                 alt={service.title}
