@@ -15,6 +15,13 @@ const fadeIn = {
 const Services = () => {
   const services = [
     {
+      title: 'Package Detailing',
+      description:
+        'Comprehensive care for both the inside and outside of your vehicle. Restore its pristine condition and protect it from wear and tear with our premium detailing services.',
+      image: CeramicImage,
+      link: '/packages/package',
+    },
+    {
       title: 'Interior Detailing',
       description:
         'Does the inside of your car need a refresh? Carpets looking a bit muddy or got a few stains in your seats? Take a look at our interior packages to get your car feeling brand new!',
@@ -27,13 +34,6 @@ const Services = () => {
         'Does your car have one too many mud spots? Bird droppings and tree sap plaguing your paint? Look through our exterior services to get your car looking like it just drove out of the dealership!',
       image: ExteriorImage,
       link: '/packages/exterior',
-    },
-    {
-      title: 'Ceramic Coatings',
-      description:
-        "Ultimate protection, effortless maintenance. Shield your car from the elements, preserve its shine, and reduce upkeep. Elevate your vehicle's appearance and longevity with ease!",
-      image: CeramicImage,
-      link: '/packages/ceramic',
     },
   ];
 
