@@ -4,8 +4,8 @@ import Logo from '../assets/logo.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-100 py-8 mt-12">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-6">
+    <footer className="bg-black text-gray-100 pt-8 mt-12">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-6 pb-4">
         {/* Hours of Operation */}
         <div className="text-center md:text-left mt-6 md:mt-0 pl-4">
           <h3 className="text-lg font-semibold text-[#FFD700]">Hours of Operation</h3>
@@ -41,6 +41,11 @@ const Footer = () => {
             <Instagram className="w-6 h-6" />
           </a>
         </div>
+      </div>
+
+      {/* Trademark Footer Text */}
+      <div className="text-center text-sm text-white-500 border-t border-gray-400 mt-4 pt-2">
+        &copy; 2025 Royal Touch Detailing. All rights reserved.
       </div>
     </footer>
   );
