@@ -1,14 +1,7 @@
-// Portfolio.jsx
 import React from 'react';
 
-const portfolioImages = [
-  '/portfolio/img1.jpg',
-  '/portfolio/img2.jpg',
-  '/portfolio/img3.jpg',
-  '/portfolio/img4.jpg',
-  '/portfolio/img5.jpg',
-  '/portfolio/img6.jpg',
-];
+const imageCount = 6; // Adjust this to match your number of images
+const portfolioImages = Array.from({ length: imageCount }, (_, i) => `/portfolio/${i + 1}.jpg`);
 
 const Portfolio = () => {
   return (
