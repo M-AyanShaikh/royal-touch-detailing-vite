@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import './Package.css'; // Import the custom CSS file for scrollbar styling
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
