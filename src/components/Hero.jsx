@@ -10,7 +10,7 @@ const Hero = () => {
         We come to you. Book a detail today and see why 100+ clients rated us 5 stars.
       </p>
       <Link
-        to="/book"
+        to="/booking"
         className="inline-block bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-[#FFD700] hover:text-black transition duration-300 shadow-md"
       >
         Book Now
