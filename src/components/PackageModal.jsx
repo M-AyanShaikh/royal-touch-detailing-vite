@@ -9,6 +9,9 @@ const PackageModal = ({ selectedPackage, expanded, onClose, onToggleExpand }) =>
     if (feature.startsWith('Everything in Basic')) {
       return selectedPackage.previousFeatures?.basic || [];
     }
+    if (feature.startsWith('Everything in Deep')) {
+      return selectedPackage.previousFeatures?.deep || [];
+    }
     if (feature.startsWith('Everything in Gold')) {
       return selectedPackage.previousFeatures?.gold || [];
     }
