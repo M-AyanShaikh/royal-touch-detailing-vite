@@ -15,11 +15,10 @@ const Navbar = () => {
           <Link to="/" className="text-white hover:text-gray-400 transition">Home</Link>
           <Link to="/services" className="text-white hover:text-gray-400 transition">Services</Link>
           <Link to="/portfolio" className="text-white hover:text-gray-400 transition">Portfolio</Link>
-          <Link to="/book" className="text-white hover:text-gray-400 transition">Book Now</Link>
           <Link to="/contact" className="text-white hover:text-gray-400 transition">Contact</Link>
           <Link to="/blog" className="text-white hover:text-gray-400 transition">Blog</Link>
           <Link
-            to="/book"
+            to="/booking"
             className="inline-block bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200 hover:text-black transition shadow-md"
           >
             Book Now
